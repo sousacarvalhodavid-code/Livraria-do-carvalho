@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria do Carvalho</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>📚 Livraria do Carvalho</h1>
+            <div class="carrinho-info">
+                <span>Carrinho: <strong id="qtd-itens">0</strong></span>
+                <span>Total: R$ <strong id="valor-total">0.00</strong></span>
+                <button onclick="finalizarPedido()" class="btn-finalizar">Finalizar Pedido</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+    <h2>A biblioteca do futuro desenvolvedor.</h2>
+    <p>Os melhores títulos de tecnologia com entrega imediata via WhatsApp.</p>
+</section>
+        <h2 class="titulo-sessao">Vendas de livros</h2>
+
+        <div class="vitrine">
+            <div class="card-livro">
+                <img src="livro1.png.png" alt="Arquitetura Limpa">
+                <h3>Arquitetura Limpa</h3>
+                <p class="autor">Robert C. Martin</p>
+                <p class="preco">R$ 85.90</p>
+                <button onclick="adicionarAoCarrinho('Arquitetura Limpa', 85.90)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="card-livro">
+                <img src="livro2.jpg.jpg" alt="Entendendo Algoritmos">
+                <h3>Entendendo Algoritmos</h3>
+                <p class="autor">Aditya Bhargava</p>
+                <p class="preco">R$ 64.00</p>
+                <button onclick="adicionarAoCarrinho('Entendendo Algoritmos', 64.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="card-livro">
+                <img src="livro2.jpg" alt="Eloquent JavaScript">
+                <h3>Eloquent JavaScript</h3>
+                <p class="autor">Marijn Haverbeke</p>
+                <p class="preco">R$ 120.00</p>
+                <button onclick="adicionarAoCarrinho('Eloquent JavaScript', 120.00)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <div class="pagamentos">
+            <p>Formas de pagamento aceitas:</p>
+            <div class="icones-pagamento">
+                <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+                <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard">
+                <img src="https://img.icons8.com/color/48/pix.png" alt="Pix">
+                <img src="https://img.icons8.com/color/48/barcode.png" alt="Boleto">
+            </div>
+        </div>
+
+    </main>
+
+    <footer style="text-align: center; padding: 30px; color: #64748b; font-size: 0.9rem;">
+        <p>&copy; 2026 Livraria do Carvalho - David Carvalho (ADS)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
