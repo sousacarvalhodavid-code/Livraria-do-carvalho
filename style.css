@@ -245,3 +245,22 @@ footer p {
         width: 100%; /* Botão fica grande e fácil de clicar no dedo */
     }
 }
+/* Isso aqui é o que faz a mágica no celular */
+@media (max-width: 768px) {
+    header .container {
+        display: flex;
+        flex-direction: column; /* Coloca um embaixo do outro */
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .carrinho-info {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .vitrine {
+        grid-template-columns: 1fr; /* Um livro por linha */
+    }
+}
